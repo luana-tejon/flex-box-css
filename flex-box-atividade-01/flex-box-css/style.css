@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    background-color: #f8f8f8;
+    color: #212427
+}
+
+h1 {
+    width: fit-content;
+    margin: auto;
+}
+
+.caixa {
+    border-radius: 5px;
+}
+
+.pai {
+    width: 80%;
+    height: 350px;
+    margin: auto;
+    background-color: antiquewhite;
+    border: solid 2px #212427;
+   
+    display: flex; /* "autorizar a div a auteração" contexto flexivel */
+    justify-content: space-between; /* posição */
+    flex-direction: column; /* direção das div como L e R que começa */
+    align-items: start;  /* posições das divs */
+}
+
+.filho {
+    display: flex; 
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    text-align: center;
+    align-items: stretch;
+    flex-direction: column; 
+}
+
+.cor1 {
+    order: 1;
+    margin-left: 0xp; /* da um espaço da posição da inicial da div que seria  align-items: start; na div "pai"*/
+    background-color: #ED145B; 
+}
+
+.cor2 {
+    order: 3;
+    margin-left: 200px;
+    background-color: #63B1BC; 
+}
+
+.cor3 {
+    order: 2; /*quero que apareça dps*/
+    margin-left: 100px;
+    background-color: #EFB661; 
+}
+
+.instrucoes {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+.footer {
+    background-color: antiquewhite;
+    height: 130px;
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: right;
+}
+
+img {
+    width: 20%;
+}
